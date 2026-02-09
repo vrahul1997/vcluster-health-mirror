@@ -1,0 +1,8 @@
+apiVersion: fleet.health.io/v1alpha1
+kind: VClusterHealth
+metadata:
+    name: fleet
+    namespace: default
+spec:
+    intervalSeconds: 30
+    namespace: '*'

@@ -1,0 +1,21 @@
+# Go
+bin/
+dist/
+*.exe
+*.out
+*.test
+vendor/
+
+# Kubebuilder / controller-runtime
+config/crd/bases/
+config/crd/kustomization.yaml
+config/crd/patches/
+config/crd/webhook/
+config/crd/certmanager/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

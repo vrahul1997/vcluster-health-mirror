@@ -1,0 +1,41 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  - services
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - fleet.health.io
+  resources:
+  - vclusterhealths
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - fleet.health.io
+  resources:
+  - vclusterhealths/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - fleet.health.io
+  resources:
+  - vclusterhealths/status
+  verbs:
+  - get
+  - patch
+  - update

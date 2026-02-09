@@ -1,0 +1,9 @@
+apiVersion: fleet.health.io/v1alpha1
+kind: VClusterHealth
+metadata:
+  labels:
+    app.kubernetes.io/name: health-mirror
+    app.kubernetes.io/managed-by: kustomize
+  name: vclusterhealth-sample
+spec:
+  # TODO(user): Add fields here
