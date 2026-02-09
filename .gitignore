@@ -1,6 +1,5 @@
 # Go
 bin/
-dist/
 *.exe
 *.out
 *.test
